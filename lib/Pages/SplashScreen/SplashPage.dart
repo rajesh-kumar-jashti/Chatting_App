@@ -1,4 +1,6 @@
+import 'package:chatty/Config/Images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -6,14 +8,8 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "SPLASH SCREEN",
-          style: Theme.of(context).textTheme.headlineSmall,
-        ),
-      ),
-      body: Column(
-        children: [],
+      body: Center(
+        child: SvgPicture.asset(AssetsImage.appIconSVG),
       ),
     );
   }
